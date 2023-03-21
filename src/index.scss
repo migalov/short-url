@@ -52,3 +52,36 @@ code {
     background: url('../src/images/bg-boost-desktop.svg') no-repeat center, #3A3054;
   }
 }
+
+.stat {
+  position: relative;
+  z-index: 1;
+
+  &:nth-child(2), &:last-child {
+    @apply mt-[47px] md:mt-[0]; 
+    &::before {
+      content: "";
+      @apply absolute top-[-76px] left-[50%] translate-x-[-50%] w-2 h-12;
+      background: #2BD0D0;
+    }
+  }
+
+  &:nth-child(2) {
+    @apply md:mt-[70px];
+    &::before {
+      content: "";
+      @apply md:top-[70px] md:left-[-30px] md:translate-x-0 md:w-[30px] md:h-2;
+      background: #2BD0D0;
+    }
+  }
+
+  &:last-child {
+    @apply md:mt-[140px];
+    &::before {
+      content: "";
+      @apply md:top-[70px] md:left-[-30px] md:translate-x-0 md:w-[30px] md:h-2;
+      background: #2BD0D0;
+    }
+  }
+  
+}
