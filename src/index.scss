@@ -43,3 +43,12 @@ code {
     }
   }
 }
+
+.boost {
+  background: url('../src/images/bg-boost-mobile.svg') no-repeat center, #3A3054;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    background: url('../src/images/bg-boost-desktop.svg') no-repeat center, #3A3054;
+  }
+}
