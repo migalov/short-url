@@ -30,7 +30,7 @@ code {
 }
 
 .btn {
-  @apply bg-teal-400 text-white;
+  @apply bg-teal-400 text-white font-bold;
 
   &:hover {
     @apply bg-teal-200
