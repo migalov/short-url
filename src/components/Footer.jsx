@@ -3,69 +3,9 @@ import tw from "../images/icon-twitter.svg"
 import pn from "../images/icon-pinterest.svg"
 import inst from "../images/icon-instagram.svg"
 import logo from "../images/logo-footer.svg"
+import menuData from "../content/footer-menu.json"
 
-const menu = [
-    {
-        id: 1,
-        title: "Features",
-        submenu: [
-            {
-                id: 4,
-                title: "Link Shortening"
-            },
-            {
-                id: 5,
-                title: "Branded Links"
-            },
-            {
-                id: 6,
-                title: "Analytics"
-            }
-        ]
-    },
-    {
-        id: 2,
-        title: "Resources",
-        submenu: [
-            {
-                id: 7,
-                title: "Blog"
-            },
-            {
-                id: 8,
-                title: "Developers"
-            },
-            {
-                id: 9,
-                title: "Support"
-            }
-        ],
-    },
-    {
-        title: "Company",
-        id: 3,
-        submenu: [
-            {
-                id: 10,
-                title: "About"
-            },
-            {
-                id: 11,
-                title: "Our Team"
-            },
-            {
-                id: 12,
-                title: "Careers"
-            },
-            {
-                id: 13,
-                title: "Contact"
-            }
-        ]
-    }
-]
-
-const menuItems = menu.map((item) =>
+const menuItems = menuData.map((item) =>
     <article className="text-center md:text-left" key={item.id.toString()}>
         <h3 className="text-white text-lg font-bold tracking-wide">{item.title}</h3>
         <ul className="flex flex-col gap-[10px] mt-[22px]">

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Features"
+    },
+    {
+        "id": 2,
+        "title": "Pricing"
+    },
+    {
+        "title": "Resources",
+        "id": 3
+    }
+]

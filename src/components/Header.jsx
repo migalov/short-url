@@ -1,23 +1,10 @@
 import logo from '../images/logo.svg';
 import { useState } from 'react';
+import menuData from '../content/header-menu.json'
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
-    const menu = [
-        {
-            id: 1,
-            title: "Features"
-        },
-        {
-            id: 2,
-            title: "Pricing"
-        },
-        {
-            title: "Resources",
-            id: 3
-        }
-    ];
-    const menuItems = menu.map((item) =>
+    const menuItems = menuData.map((item) =>
         <li className="text-slate-200 text-[15px] md:text-[18px] font-bold" key={item.id.toString()}>{item.title}</li>
     );
 
