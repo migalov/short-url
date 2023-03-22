@@ -95,7 +95,10 @@ input {
 input[type="text"] {
   @apply border-[3px] rounded-[10px] px-5 py-3;
   &::placeholder {
-    @apply text-amber-600 opacity-50;
+    @apply border-slate-400 opacity-50;
+  }
+  &:target, &:focus {
+    @apply border-slate-600
   }
 }
 
