@@ -24,9 +24,8 @@ ul, li {
   @apply px-5 mx-auto lg:max-w-5xl xl:max-w-6xl 2xl:px-0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  outline: none;
 }
 
 .btn {
@@ -83,5 +82,27 @@ code {
       background: #2BD0D0;
     }
   }
-  
+}
+
+.form {
+  &--failed {
+    & input[type="text"] {
+      @apply border-amber-600;
+    }
+  }
+}
+
+input[type="text"] {
+  @apply border-[3px] rounded-[10px] px-5 py-3;
+  &::placeholder {
+    @apply text-amber-600 opacity-50;
+  }
+}
+
+input[type="submit"] {
+  @apply cursor-pointer;
+}
+
+.message {
+  @apply text-amber-600;
 }
