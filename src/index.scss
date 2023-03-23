@@ -92,6 +92,20 @@ input {
   }
 }
 
+.form-section {
+  position: relative;
+  &::before, &::after {
+    content: "";
+    @apply absolute top-0 w-full h-1/2 bg-white -z-[-1];
+  }
+  &::before {
+    @apply left-full;
+  }
+  &::after {
+    @apply right-full;
+  }
+}
+
 input[type="text"] {
   @apply border-[3px] rounded-[10px] px-5 py-3;
   &::placeholder {

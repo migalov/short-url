@@ -14,7 +14,6 @@ export default function Header() {
                 <div className="flex items-center justify-between">
                 <article className="flex items-center">
                     <img src={logo} alt="" />
-
                     <nav className="hidden md:block md:ml-11">
                     <ul className="flex items-start justify-start gap-7">
                         {menuItems}

@@ -6,8 +6,11 @@ import statisticsData from "../content/advanced.json"
 const icons = [brand, records, fully];
 const statistics = statisticsData.map((stat) =>
     <article key={stat.id.toString()} className={`stat bg-white px-8 py-9 rounded relative`}>
-        <img src={icons[stat.id - 1]} alt="" className="p-3 -mt-12 bg-slate-800 rounded-full mx-auto"/>
-        <h3 className="text-slate-800 text-lg mt-5 mb-2 font-bold">{stat.title}</h3>
+        <div className="bg-slate-800 w-[88px] h-[88px] flex justify-center rounded-full items-center -mt-[4rem] md:-mt-[5rem] mx-auto md:mx-0">
+            <img src={icons[stat.id - 1]} alt="" className="p-3 mx-auto"/>
+        </div>
+        
+        <h3 className="text-slate-800 text-lg mt-9 mb-[18px] font-bold text-[22px]">{stat.title}</h3>
         <p className="text-slate-400">{stat.text}</p>
     </article>
 );
@@ -15,12 +18,12 @@ const statistics = statisticsData.map((stat) =>
 export default function Advanced() {
   return (
     <>
-      <section className="bg-gray-100 pt-32 pb-10 lg:pb-40">
+      <section className="bg-gray-100 py-[60px] md:py-[94px] lg:pb-40">
         <div className="container">
-          <h2 className="text-4xl font-bold text-slate-800 mb-3 text-center">
+          <h2 className="text-[28px] md:text-[40px] font-bold text-slate-800 mb-3 text-center">
             Advanced Statistics
           </h2>
-          <p className="text-slate-400 text-center mb-10">
+          <p className="text-slate-400 md:text-[18px] text-center mb-[76px] md:mb-[30px]">
             Track how your links are performing across the web <br /> with our
             advanced statistics dashboard.
           </p>

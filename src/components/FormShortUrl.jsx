@@ -12,7 +12,7 @@ export default function FormShortUrl() {
             url = `${apiEndPoint}${input.link}`,
             response = await fetch(url),
             data = await response.json();
-            
+
     setListOfLinks([...listOfLinks, {linkOriginal: data.result.original_link, linkShort: data.result.short_link}])
 }
     
@@ -20,11 +20,11 @@ export default function FormShortUrl() {
     <>
       <section className="relative overflow-hidden bg-gray-100">
             <form onSubmit={handleSubmit(onSubmit)} className="container">
-                <fieldset className="flex flex-col md:flex-row p-6 md:p-[52px] gap-9 md:gap-6 boost rounded-[10px]">
+                <fieldset className="flex flex-col md:flex-row p-6 md:p-[52px] gap-9 md:gap-6 boost form-section rounded-[10px]">
                     <input
                         type="text"
                         placeholder={"Shorten a link here..."}
-                        className="border-[3px] rounded-[10px] px-5 py-3 flex-1"
+                        className="border-[3px] rounded-[10px] px-[28px] py-[24px] flex-1"
                         {...register("link", {
                             required: "Please add a link...",
                             pattern: {

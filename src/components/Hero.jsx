@@ -13,7 +13,7 @@ export default function Hero() {
             Build your brand’s recognition and get detailed insights on how
             your links are performing.
           </p>
-          <button className="btn rounded-full btn px-12 py-3">Get Started</button>
+          <button className="btn rounded-full btn px-[55px] py-[17px]">Get Started</button>
         </article>
 
         <article>
