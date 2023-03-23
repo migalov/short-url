@@ -13,7 +13,7 @@ export default function FormShortUrl() {
             response = await fetch(url),
             data = await response.json();
 
-    setListOfLinks([...listOfLinks, {linkOriginal: data.result.original_link, linkShort: data.result.short_link}])
+    setListOfLinks([...listOfLinks, {linkOriginal: data.result.original_link, linkShort: data.result.full_short_link}])
 }
     
   return (
